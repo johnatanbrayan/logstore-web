@@ -1,4 +1,4 @@
-# LogstoreWeb
+# Logstore Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
@@ -6,22 +6,30 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Teste de desenvolvimento CINGO:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Premissas:
 
-## Build
+1. Todo o conteúdo do desenvolvimento deverá estar disponível no seu repositório do github
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Utilizar bootstrap com jquery para frontend
+   a. Poderá ser utilizado angular (não JS) como diferencial, mas não será cobrado
+3. Criar um README com instruções para utilizar seu frontend.
 
-## Running unit tests
+4. Respeitar a arquitetura (stack) já disponibilizada no projeto logstore (backend - https://github.com/gustavoaalves/logstore)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Requisitos:
 
-## Running end-to-end tests
+1. Criar uma tela em bootstrap onde seja possível visualizar os registros da entidade Log
+   a. Usar table para apresentar os registros
+   b. Os registros devem ser apresentados em ordem decrescente de `ocorrências`
+   c. Criar um botão onde será possível acessar a tela abaixo
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+2. Criar uma tela possível realizar a inserção dos dados na entidade Log
+   a. Os dois campos serão obrigatórios
+   b. O formulário deverá validar e realizar a ação de salvar ao dar ‘enter’ em qualquer campo
+   c. Após salvar deve voltar a tela acima
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Adicionar um botão que permita ao usuário deletar alguns registros de logs
+   Desafio (Opcional):
+   Adaptar o projeto logstore (backend - https://github.com/gustavoaalves/logstore) com o objetivo de implementar uma rotina que faça a leitura de logs de uma pasta do servidor.
