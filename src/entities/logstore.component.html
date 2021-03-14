@@ -1,5 +1,15 @@
 <div class="card">
-  <div class="card-header">Logs</div>
+  <div class="card-header">
+    <span class="h5">Logs</span>
+
+    <button
+      type="submit"
+      class="btn btn-primary float-right"
+      (click)="create()"
+    >
+      <fa-icon icon="plus"></fa-icon>
+    </button>
+  </div>
 
   <div class="card-body">
     <div class="alert alert-warning" *ngIf="logstoreList?.length === 0">

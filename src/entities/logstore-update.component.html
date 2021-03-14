@@ -1,0 +1,102 @@
+<form name="editForm" role="form" #editForm="ngForm" (ngSubmit)="save()">
+  <div class="modal-header">
+    <h5 class="modal-title">
+      <span>Novo Log</span>
+    </h5>
+
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-hidden="true"
+      (click)="clear()"
+    >
+      x
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-control-label" for="field_content">Content</label>
+          <textarea
+            class="form-control"
+            id="field_content"
+            name="content"
+            #contentInput="ngModel"
+            [(ngModel)]="log.content"
+            rows="4"
+            required
+          ></textarea>
+
+          <div
+            *ngIf="
+              (contentInput.invalid && contentInput.dirty) ||
+              contentInput.touched
+            "
+          >
+            <small
+              class="form-text text-danger"
+              *ngIf="contentInput.errors?.required"
+            >
+              Esse campo é obrigatório.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="field_occurrences"
+            >Occurrences</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            name="occurrences"
+            id="field_occurrences"
+            #occurrencesInput="ngModel"
+            [(ngModel)]="log.occurrences"
+            required
+          />
+
+          <div
+            *ngIf="
+              (occurrencesInput.invalid && occurrencesInput.dirty) ||
+              occurrencesInput.touched
+            "
+          >
+            <small
+              class="form-text text-danger"
+              *ngIf="occurrencesInput.errors?.required"
+            >
+              Esse campo é obrigatório.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-dismiss="modal"
+      (click)="clear()"
+    >
+      <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancelar</span>
+    </button>
+
+    <button
+      type="submit"
+      [disabled]="editForm.form.invalid || isSaving"
+      class="btn btn-primary"
+    >
+      <fa-icon icon="save"></fa-icon>&nbsp;<span>Salvar</span>
+    </button>
+  </div>
+</form>
