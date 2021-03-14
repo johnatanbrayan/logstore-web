@@ -2,9 +2,12 @@
 
 Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cli) versão 10.0.7.
 
-## Development server
+## Como usar
+### Back
+  Siga as instruções desse repositorio (backend - https://github.com/gustavoaalves/logstore).
 
-Execute `npm run start` ou` yarn run start` para um servidor de desenvolvimento. Navegue até `http: // localhost: 4200 /`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+### Front
+Execute `npm run start` ou` yarn run start` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 # Teste CINGO:
 
