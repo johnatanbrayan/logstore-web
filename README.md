@@ -2,7 +2,7 @@
 
 Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cli) versão 10.0.7.
 
-## Como usar
+## Como usar:
 ### Back
   Siga as instruções desse repositorio (backend - https://github.com/gustavoaalves/logstore).
 
