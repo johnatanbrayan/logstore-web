@@ -12,7 +12,7 @@ Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cl
 * Instale as dependências `npm install` ou `yarn install`
 * Execute `npm run start` ou` yarn run start` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-# Teste CINGO:
+# Desafio:
 
 ## Premissas:
 
