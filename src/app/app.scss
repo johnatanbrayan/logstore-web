@@ -65,7 +65,6 @@ h6 {
 }
 
 .content {
-  display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
   max-width: 960px;
@@ -109,18 +108,6 @@ a:hover {
 .circle-link:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
-}
-
-footer a {
-  display: flex;
-  align-items: center;
 }
 
 svg#clouds {

@@ -10,13 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class LogstoreComponent implements OnInit {
   logstoreList?: ILogstore[];
 
+  page = 1;
+  pageSize = 10;
+  items = [];
+
   constructor(protected logstoreService: LogstoreService) {}
 
   ngOnInit(): void {
-    // this.logstoreService
-    //   .query()
-    //   .subscribe(
-    //     (res: HttpResponse<ILogstore[]>) => (this.logstoreList = res.body)
-    //   );
+    this.logstoreService
+      .query()
+      .subscribe(
+        (res: HttpResponse<ILogstore[]>) => (this.logstoreList = res.body)
+      );
   }
 }

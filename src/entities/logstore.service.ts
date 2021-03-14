@@ -1,3 +1,4 @@
+import { SERVER_API_URL } from './../utils/constants/settings';
 import { ILogstore } from './../utils/models/logstore.model';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
@@ -5,7 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class LogstoreService {
-  public resourceUrl = '/logstore-0.0.1-SNAPSHOT/log';
+  public resourceUrl = SERVER_API_URL + 'logstore-0.0.1-SNAPSHOT/log';
 
   constructor(protected http: HttpClient) {}
 

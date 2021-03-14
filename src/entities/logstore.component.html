@@ -2,8 +2,46 @@
   <div class="card-header">Logs</div>
 
   <div class="card-body">
-    sasfasdfasdfjasdfowpefonasdfnpsodvaoskdjfpaosdfjoijwef
-    sasfasdfasdfjasdfowpefonasdfnpsodvaoskdjfpaosdfjoijwef
-    sasfasdfasdfjasdfowpefonasdfnpsodvaoskdjfpaosdfjoijwef
+    <div class="alert alert-warning" *ngIf="logstoreList?.length === 0">
+      Nenhum Log encontrado.
+    </div>
+
+    <div
+      class="table-responsive"
+      *ngIf="logstoreList && logstoreList.length > 0"
+    >
+      <table class="table table-striped">
+        <thead>
+          <th scope="col">Id</th>
+          <th scope="col">Content</th>
+          <th scope="col">Occurrences</th>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let log of logstoreList
+                | slice: (page - 1) * pageSize:(page - 1) * pageSize + pageSize
+            "
+          >
+            <td>{{ log.id }}</td>
+            <td>{{ log.content }}</td>
+            <td>{{ log.occurrences }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row justify-content-center">
+        <ngb-pagination
+          [collectionSize]="logstoreList.length"
+          [(page)]="page"
+          [maxSize]="5"
+          [pageSize]="pageSize"
+          [rotate]="true"
+          [ellipses]="false"
+          [boundaryLinks]="true"
+        >
+        </ngb-pagination>
+      </div>
+    </div>
   </div>
 </div>
