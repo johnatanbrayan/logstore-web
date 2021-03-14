@@ -7,6 +7,7 @@ Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cl
   Siga as instruções desse repositorio (backend - https://github.com/gustavoaalves/logstore).
 
 ### Front
+* Instale [node] (https://nodejs.org/en/download/) ou [yarn] (https://classic.yarnpkg.com/en/docs/install/) na máquina local.
 * Instale o angular `npm install -g @angular/cli` ou `yarn add -g @angular/cli`. 
 * Instale as dependências `npm install` ou `yarn install`
 * Execute `npm run start` ou` yarn run start` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
