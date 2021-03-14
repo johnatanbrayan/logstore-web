@@ -31,4 +31,4 @@ Execute `npm run start` ou` yarn run start` para um servidor de desenvolvimento.
    * [x] c. Após salvar deve voltar a tela acima
 
 3. Adicionar um botão que permita ao usuário deletar alguns registros de logs Desafio (Opcional):
-   * [] Adaptar o projeto logstore (backend - https://github.com/gustavoaalves/logstore) com o objetivo de implementar uma rotina que faça a leitura de logs de uma pasta do servidor.
+   * [ ] Adaptar o projeto logstore (backend - https://github.com/gustavoaalves/logstore) com o objetivo de implementar uma rotina que faça a leitura de logs de uma pasta do servidor.
